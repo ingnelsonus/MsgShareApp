@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">HolaMundo</string>
+    <string name="titulojuego">Que es esta imagen?</string>
+    <string name="login_username_hint">Celular, email o nombre de usuario</string>
+    <string name="login_password_hint">Contraseña</string>
+    <string name="login_button">Log in</string>
+    <string name="login_forgot_password">Olvide mi contraseña</string>
+    <string name="facebook_login">Log in con Facebook</string>
+    <string name="login_sign_up">Quiero registrarme</string>
+</resources>

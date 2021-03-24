@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="@dimen/espacio_entre_elementos"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <TextView
+        android:id="@+id/lblTittle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/espacio_entre_elementos"
+        android:text="@string/titulojuego"
+        style="@style/titulo"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent">
+    </TextView>
+
+    <ImageView
+        android:id="@+id/imgTarget"
+        android:layout_width="300dp"
+        android:layout_height="200dp"
+        android:layout_marginBottom="@dimen/espacio_entre_elementos"
+        app:layout_constraintTop_toBottomOf="@id/lblTittle"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:src="@drawable/perrito">
+    </ImageView>
+
+    <EditText
+        android:id="@+id/txtAnswer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="text"
+        android:hint="Answer here"
+        android:layout_marginBottom="@dimen/espacio_entre_elementos"
+        app:layout_constraintTop_toBottomOf="@id/imgTarget">
+    </EditText>
+
+    <Button
+        android:id="@+id/btnEnviar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/espacio_entre_elementos"
+        app:layout_constraintTop_toBottomOf="@id/txtAnswer"
+        android:text="Send answer">
+    </Button>
+
+    <Button
+        android:id="@+id/btnReset"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/espacio_entre_elementos"
+        app:layout_constraintTop_toBottomOf="@id/btnEnviar"
+        android:text="Reset">
+    </Button>
+    <TextView
+        android:id="@+id/lblResult"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/espacio_entre_elementos"
+        android:hint="Result Here"
+        android:textColor="@color/black"
+        android:text="Mensaje"
+        app:layout_constraintTop_toBottomOf="@id/btnReset"
+        ></TextView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
